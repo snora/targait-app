@@ -1,7 +1,9 @@
+'use client';
+
 import React, { useState, useRef, useEffect } from 'react';
 import { Send, Target, Download, BookmarkPlus, History, Trash2, Search, Users, Building, Clock, TrendingUp, Menu, X, Star, Check, ArrowRight } from 'lucide-react';
 
-const TargAItApp = () => {
+export default function Home() {
   const [currentPage, setCurrentPage] = useState('home');
   const [messages, setMessages] = useState([]);
   const [inputValue, setInputValue] = useState('');
@@ -534,7 +536,7 @@ const TargAItApp = () => {
               </div>
               <div className="flex items-center text-gray-200">
                 <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                <span>Accès à l'API</span>
+                <span>Accès à l&apos;API</span>
               </div>
             </div>
           </div>
@@ -567,15 +569,15 @@ const TargAItApp = () => {
               </div>
               <div className="flex items-center text-gray-300">
                 <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                <span>Pas d'engagement</span>
+                <span>Pas d&apos;engagement</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                <span>Facturation à l'usage</span>
+                <span>Facturation à l&apos;usage</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                <span>Accès à l'API</span>
+                <span>Accès à l&apos;API</span>
               </div>
             </div>
           </div>
@@ -609,11 +611,11 @@ const TargAItApp = () => {
               </div>
               <div className="flex items-center text-gray-300">
                 <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                <span>Formation & onboarding</span>
+                <span>Formation &amp; onboarding</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
-                <span>Accès à l'API</span>
+                <span>Accès à l&apos;API</span>
               </div>
               <div className="flex items-center text-gray-300">
                 <Check className="w-5 h-5 text-green-400 mr-3 flex-shrink-0" />
@@ -732,21 +734,21 @@ const TargAItApp = () => {
       { id: 'api', label: 'API Reference', icon: Building },
       { id: 'integrations', label: 'Intégrations', icon: Users },
       { id: 'strategies', label: 'Stratégies', icon: TrendingUp },
-      { id: 'use-cases', label: 'Cas d\'usage', icon: Star }
+      { id: 'use-cases', label: 'Cas d&apos;usage', icon: Star }
     ];
 
     const content = {
       introduction: {
         title: 'Welcome',
-        subtitle: 'Maîtrisez l\'intelligence temporelle B2B avec TargAIt',
+        subtitle: 'Maîtrisez l&apos;intelligence temporelle B2B avec TargAIt',
         sections: [
           {
-            title: 'Qu\'est-ce que TargAIt ?',
-            content: 'TargAIt révolutionne la prospection B2B en identifiant les entreprises approchant la fin de leur cycle d\'usage des solutions logicielles. Notre intelligence temporelle vous permet de cibler vos campagnes avec une précision inégalée.'
+            title: 'Qu&apos;est-ce que TargAIt ?',
+            content: 'TargAIt révolutionne la prospection B2B en identifiant les entreprises approchant la fin de leur cycle d&apos;usage des solutions logicielles. Notre intelligence temporelle vous permet de cibler vos campagnes avec une précision inégalée.'
           },
           {
             title: 'Comment ça fonctionne',
-            content: 'Nous analysons en temps réel les signaux d\'adoption, de migration et de renouvellement des entreprises pour vous proposer les prospects les plus qualifiés au moment optimal.'
+            content: 'Nous analysons en temps réel les signaux d&apos;adoption, de migration et de renouvellement des entreprises pour vous proposer les prospects les plus qualifiés au moment optimal.'
           },
           {
             title: 'Votre avantage concurrentiel',
@@ -760,11 +762,11 @@ const TargAItApp = () => {
         sections: [
           {
             title: 'Première recherche',
-            content: 'Utilisez notre interface intuitive pour formuler votre première requête. Soyez spécifique : secteur, taille d\'entreprise, technologie utilisée et durée d\'usage.'
+            content: 'Utilisez notre interface intuitive pour formuler votre première requête. Soyez spécifique : secteur, taille d&apos;entreprise, technologie utilisée et durée d&apos;usage.'
           },
           {
             title: 'Interpréter les résultats',
-            content: 'Chaque résultat inclut des métriques temporelles clés : durée d\'usage, date d\'adoption estimée, signaux de migration détectés et score de fiabilité.'
+            content: 'Chaque résultat inclut des métriques temporelles clés : durée d&apos;usage, date d&apos;adoption estimée, signaux de migration détectés et score de fiabilité.'
           },
           {
             title: 'Export et actions',
@@ -814,28 +816,28 @@ const TargAItApp = () => {
         sections: [
           {
             title: 'Ciblage temporel optimal',
-            content: 'CRM : 7-8 ans d\'usage = zone chaude. ERP : 10+ ans = migration probable. Communication : 3-4 ans = rotation naturelle. Adaptez vos approches selon ces cycles.'
+            content: 'CRM : 7-8 ans d&apos;usage = zone chaude. ERP : 10+ ans = migration probable. Communication : 3-4 ans = rotation naturelle. Adaptez vos approches selon ces cycles.'
           },
           {
             title: 'Signaux de migration',
-            content: 'Surveillez les mentions "cherche alternative", "problèmes de performance", "budget renouvellement". Ces signaux indiquent une intention d\'achat imminente.'
+            content: 'Surveillez les mentions "cherche alternative", "problèmes de performance", "budget renouvellement". Ces signaux indiquent une intention d&apos;achat imminente.'
           },
           {
             title: 'Segmentation avancée',
-            content: 'Combinez critères sectoriels + taille + durée d\'usage. Exemple : "Banques françaises 500+ employés, CRM 8+ ans" = segment ultra-qualifié pour solutions financières.'
+            content: 'Combinez critères sectoriels + taille + durée d&apos;usage. Exemple : "Banques françaises 500+ employés, CRM 8+ ans" = segment ultra-qualifié pour solutions financières.'
           }
         ]
       },
       'use-cases': {
-        title: 'Cas d\'usage',
-        subtitle: 'Exemples concrets d\'utilisation par secteur',
+        title: 'Cas d&apos;usage',
+        subtitle: 'Exemples concrets d&apos;utilisation par secteur',
         sections: [
           {
             title: 'Éditeurs de logiciels',
             content: 'Identifiez les entreprises utilisant des solutions concurrentes depuis 5+ ans. Ciblez les moments de renouvellement pour proposer vos alternatives.'
           },
           {
-            title: 'Intégrateurs & ESN',
+            title: 'Intégrateurs &amp; ESN',
             content: 'Détectez les entreprises avec des ERP obsolètes nécessitant une modernisation. Proposez vos services de migration au moment optimal.'
           },
           {
@@ -965,7 +967,7 @@ const TargAItApp = () => {
               {isLogin ? 'Connexion' : 'Créer un compte'}
             </h1>
             <p className="text-gray-400">
-              {isLogin ? 'Connectez-vous à votre compte TargAIt' : 'Rejoignez TargAIt aujourd\'hui'}
+              {isLogin ? 'Connectez-vous à votre compte TargAIt' : 'Rejoignez TargAIt aujourd&apos;hui'}
             </p>
           </div>
 
@@ -984,7 +986,7 @@ const TargAItApp = () => {
               onClick={() => setCurrentPage(isLogin ? 'signup' : 'login')}
               className="text-blue-400 hover:text-blue-300 text-sm"
             >
-              {isLogin ? 'Pas encore de compte ? S\'inscrire' : 'Déjà un compte ? Se connecter'}
+              {isLogin ? 'Pas encore de compte ? S&apos;inscrire' : 'Déjà un compte ? Se connecter'}
             </button>
           </div>
         </div>
@@ -1005,6 +1007,4 @@ const TargAItApp = () => {
     default:
       return <HomePage />;
   }
-};
-
-export default TargAItApp;
+}
